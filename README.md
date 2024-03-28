@@ -1,18 +1,11 @@
-# Car-Evaluation-Prediction
-This dataset has 1728 records, each record representing a car evaluation. Each car evaluation is described with 7 attributes. 6 of the attributes represent car characteristics, such as buying price, price of the maintenance, number of doors, capacity in terms of persons to carry, the size of luggage boot, and estimated safety of the car. The seventh variable represents the evaluation of the car (unacceptable, acceptable, good, very good).
+# Car Evaluation Dataset
+This dataset comprises 1,728 records, each representing a car evaluation. Each evaluation includes 7 attributes, with 6 describing car characteristics such as buying price, maintenance cost, number of doors, passenger capacity, luggage boot size, and estimated safety rating. The seventh attribute indicates the overall evaluation of the car, categorized as unacceptable, acceptable, good, or very good.
 
 Handling Ordinal Inputs
-In this problem, I also tested different methods to handle the features, which are currently reppresented as numeric features however, it is also considered as ordinal due to underlying meaning.
-Numeric vs. Categorical Approach: Discuss the advantages and disadvantages of treating ordinal variables as either numeric or categorical. Compare the performances of models using both approaches to determine which was more effective.
+In addressing this problem, various methods were tested to handle features that are both numeric and considered ordinal due to their inherent meaning. A comparison was made between treating ordinal variables as numeric or categorical, each with its own set of advantages and disadvantages. Model performances were compared using both approaches to determine the most effective strategy.
 
-Model Applied
-Decision Tree
-K-Nearest Neighbor
-Logistic Regression
-Naive Bayes
-Support Vector Machine (SVM)
-Nested cross-validation
-With different hyperparameter: maxdepth in decision tree, k value in the kNN model, and c value in Logistic regression, kernel and C in SVM then finalized the optimal hyperparameter to get highest performance on traning data but ensure not commmit overfitting by comparing with performance on validation dataset. After that, I would like to check the robust of the model by using cross-validation to check whether my model work well on the unseen data.
+Applied Models
+Several models were applied to the dataset, including Decision Tree, K-Nearest Neighbor, Logistic Regression, Naive Bayes, and Support Vector Machine (SVM). Nested cross-validation was utilized with different hyperparameters for each model, such as maxdepth in Decision Tree, k value in kNN, and c value in Logistic Regression. The goal was to identify optimal hyperparameters that maximize performance on the training data while avoiding overfitting by comparing results on a validation dataset. Additionally, the robustness of the models was assessed using cross-validation to ensure effectiveness on unseen data.
 
 Exploration
-The comprehensive analysis of our models indicates a consistent trend: numerical inputs generally outperform categorical ones in performance metrics across most models and various classes. This trend underscores the greater efficiency and effectiveness of numerical inputs for car evaluation purposes. Furthermore, a deeper dive into the classification task reveals that Decision Tree and SVM models exhibit superior classification prowess, distinguishing themselves as particularly effective for this specific application.
+Analysis of the models consistently revealed that numerical inputs tend to outperform categorical ones across various performance metrics and model classes. This underscores the efficiency and effectiveness of using numerical inputs for car evaluation tasks. Furthermore, deeper examination of the classification task highlighted Decision Tree and SVM models as particularly adept, demonstrating superior classification performance tailored to this specific application.
